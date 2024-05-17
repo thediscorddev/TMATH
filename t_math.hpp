@@ -1,0 +1,30 @@
+#ifndef T_MATH_HPP
+#define T_MATH_HPP
+#define T_MATH_HPP_VERSION 1.0
+// constant
+#include "t_math_constant.hpp"
+// general
+#include "general/factorial.hpp"
+#include "general/pow.hpp"
+#include "general/floor.hpp"
+#include "general/ceil.hpp"
+#include "general/round_high.hpp"
+#include "general/round_low.hpp"
+#include "general/round.hpp"
+#include "general/abs.hpp"
+#include "general/exp.hpp"
+#include "general/ln.hpp"
+#include "general/nthroot.hpp"
+#include "general/sqrt.hpp"
+#include "general/cubic_root.hpp"
+// trigonometry
+#include "trigonometry/sin.hpp"
+#include "trigonometry/cos.hpp"
+#include "trigonometry/tan.hpp"
+#include "trigonometry/cot.hpp"
+#include "trigonometry/sec.hpp"
+#include "trigonometry/csc.hpp"
+#include "trigonometry/asin.hpp"
+#include "trigonometry/acos.hpp"
+#include "trigonometry/atan.hpp"
+#endif // T_MATH_HPP
