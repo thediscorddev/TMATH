@@ -1,5 +1,6 @@
 #ifndef POW_HPP
 #define POW_HPP
+#include <stdexcept>
 namespace t_math
 {
     long double pow(double base, int exponent)

@@ -17,6 +17,8 @@
 #include "general/nthroot.hpp"
 #include "general/sqrt.hpp"
 #include "general/cubic_root.hpp"
+#include "general/log.hpp"
+#include "general/d_pow.hpp"
 // trigonometry
 #include "trigonometry/sin.hpp"
 #include "trigonometry/cos.hpp"
@@ -27,4 +29,26 @@
 #include "trigonometry/asin.hpp"
 #include "trigonometry/acos.hpp"
 #include "trigonometry/atan.hpp"
+#include "trigonometry/acot.hpp"
+#include "trigonometry/asec.hpp"
+#include "trigonometry/acsc.hpp"
+// hyperbolic
+#include "hyperbolic/sinh.hpp"
+#include "hyperbolic/cosh.hpp"
+#include "hyperbolic/tanh.hpp"
+#include "hyperbolic/coth.hpp"
+#include "hyperbolic/sech.hpp"
+#include "hyperbolic/csch.hpp"
+#include "hyperbolic/asinh.hpp"
+#include "hyperbolic/acosh.hpp"
+#include "hyperbolic/atanh.hpp"
+#include "hyperbolic/acoth.hpp"
+#include "hyperbolic/asech.hpp"
+#include "hyperbolic/acsch.hpp"
+/*
+Special functions
+These functions aren't elementary, but what makes them appear here is that they pop up often enough to be given a name.
+*/
+#include "special/si.hpp"
+#include "special/gamma.hpp"
 #endif // T_MATH_HPP
