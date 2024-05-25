@@ -3,13 +3,13 @@
 #include <stdexcept>
 namespace t_math
 {
-    long double pow(double base, int exponent)
+    long double pow_int(double base, int exponent)
     {
         if (exponent == 0)
             return 1;
         if (exponent < 0)
-            return 1 / pow(base, exponent);
-        return base * pow(base, exponent - 1);
+            return 1 / pow_int(base, exponent);
+        return base * pow_int(base, exponent - 1);
     };
 };
 #endif // POW_HPP

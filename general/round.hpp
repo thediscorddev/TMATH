@@ -7,18 +7,15 @@ namespace t_math
 {
    long double round(double x, int precision)
    {
-      int int_part = static_cast<int>(x * pow(10, precision)); // Get the integer part of x
-      if (x * pow(10, precision) - int_part >= 0.5)
+      if (floor(x * pow_int(10, precision + 1)) - floor(x * pow_int(10, precision)) * 10 >= 5)
       {
-         int n = ceil(int_part);
-         return n / pow(10, precision);
+         return (ceil(x * pow_int(10, precision)) * 10) / pow_int(10, precision + 1);
       }
-      else if (x * pow(10, precision) - int_part < 0.5)
+      else if (floor(x * pow_int(10, precision + 1)) - floor(x * pow_int(10, precision)) * 10 < 5)
       {
-         int n = floor(int_part);
-         return n / pow(10, precision);
+         return (floor(x * pow_int(10, precision)) * 10) / pow_int(10, precision + 1);
       };
-      return int_part / pow(10, precision);
+      return x;
    };
 }
 #endif // ROUND_HPP

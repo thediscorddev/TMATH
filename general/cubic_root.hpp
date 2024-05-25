@@ -8,7 +8,7 @@ namespace t_math
     {
         if (x < 0)
             return -1 * cubic_root(-1 * x);
-        return root(x, 2);
+        return root(x, 3);
     };
 }
 #endif

@@ -51,4 +51,8 @@ These functions aren't elementary, but what makes them appear here is that they 
 */
 #include "special/si.hpp"
 #include "special/gamma.hpp"
+#include "special/ci.hpp"
+#include "special/erf.hpp"
+#include "special/erfi.hpp"
+#include "special/erfc.hpp"
 #endif // T_MATH_HPP

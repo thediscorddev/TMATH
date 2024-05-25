@@ -6,8 +6,8 @@ namespace t_math
 {
     long double round_high(double x, int precision)
     {
-        double n = ceil(x * pow(10, precision));
-        return n / pow(10, precision);
+        double n = ceil(x * pow_int(10, precision));
+        return n / pow_int(10, precision);
     };
 };
 #endif // ROUND_HIGH_HPP

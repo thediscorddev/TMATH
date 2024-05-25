@@ -11,5 +11,8 @@ namespace t_math
     {
         return log(10, args);
     };
+    double lb(double args) {
+        return log(2,args);
+    };
 };
 #endif // LOG_HPP
