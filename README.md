@@ -1,1 +1,1 @@
-<h>This is the beta version of T_math! it contains unfinished code, and therefore, unstable.</h>
+<h>This is the latest version of T_math!</h>
