@@ -31,8 +31,8 @@ namespace t_math
             double sn = 1 / args;
             while (i <= 30)
             {
-                ci += pow_int(-1, i) * d_fac(2 * i) / pow_int(args, 2 * i);
-                sn += pow_int(-1, i) * d_fac(2 * i + 1) / pow_int(args, 2 * i + 1);
+                ci += d_fac(2 * i) / pow_int(args, 2 * i);
+                sn += d_fac(2 * i + 1) / pow_int(args, 2 * i + 1);
                 i++;
             };
             temp += pi / 2 - (cosh(args) / args) * ci - (sinh(args) / args) * (sn);

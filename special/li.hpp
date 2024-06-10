@@ -13,8 +13,10 @@
 
 #include "../general/ln.hpp"
 
-namespace t_math {
-  double li(double arg) {
+namespace t_math 
+{
+  double li(double arg) 
+  {
     if(arg == 0)
         return 0;
     if (arg < 0 || arg == 1)
@@ -23,7 +25,8 @@ namespace t_math {
     double is_termiated = false;
     double term = 0; // temp term
     int i = 1;
-    while (is_termiated == false) {
+    while (is_termiated == false) 
+    {
       term = pow_int(ln(arg), i) / (i * d_fac(i));
       if (abs(term) < t_math_precise) 
         is_termiated = true;

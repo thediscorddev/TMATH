@@ -47,7 +47,7 @@
 #include "hyperbolic/acsch.hpp"
 /*
 Special functions
-These functions aren't elementary, but what makes them appear here is that they pop up often enough to be given a name.
+These functions aren't elementary, but what makes them appear here is that they show up often enough to have a name.
 */
 #include "special/si.hpp"
 #include "special/ci.hpp"
@@ -58,6 +58,7 @@ These functions aren't elementary, but what makes them appear here is that they 
 #include "special/zeta.hpp"
 #include "special/li.hpp"
 #include "special/shi.hpp"
+#include "special/ProductLog.hpp"
 //other function
 #include "other/is_int.hpp"
 #endif // T_MATH_HPP
