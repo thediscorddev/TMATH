@@ -16,19 +16,24 @@ namespace t_math
         if (x <= 0)
             throw std::out_of_range("Not a real number.");
         // determine how many digit are there in the number without log10
-        while (floor(x / pow_int(10, num_of_int_digit)) > 0)
+        if (x >= 2)
         {
-            num_of_int_digit++;
+            while (floor(x / pow_int(10, num_of_int_digit)) > 0)
+            {
+                num_of_int_digit++;
+            };
         };
+        if(x> 0 && x <= 0.01) 
+          return ln(x*10)-2.302585092994046;
         while (is_termimated == false)
         {
             term = pow_int(-1, i) * pow_int(x / pow_int(10, num_of_int_digit) - 1, i + 1) / (i + 1);
-            if (abs(term) < t_math_precise)
+            if (abs(term) < t_math_precise*0.0000001)
                 is_termimated = true;
             result += term;
             i++;
         };
-        return result + num_of_int_digit * 2.3025850929;
+        return result + num_of_int_digit * 2.302585092994046;
     };
 };
 #endif

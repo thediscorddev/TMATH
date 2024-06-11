@@ -12,7 +12,7 @@ void loop()
     cout << "==================" << endl;
     cin >> a;
     auto start = high_resolution_clock::now();
-    cout << "ProductLog(x):" << setprecision(7) << ProductLog(a) << endl;
+    cout << "gamma(x):" << setprecision(7) << gamma(a) << endl;
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
     cout << "execution time:" << duration.count() / 1e+6 << endl;
@@ -20,7 +20,7 @@ void loop()
 };
 int main()
 {
-    cout << "==============\nProductLog(x) test" << endl;
+    cout << "==============\ngamma(x) test" << endl;
     loop();
 
     return 0;

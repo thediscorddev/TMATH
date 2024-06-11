@@ -20,7 +20,7 @@ namespace t_math
             temp = ln(args)/(1.18 * exp(0.018 * ln(args))); // First guess for larger values of args
         while(abs(temp * exp(temp) - args) > t_math_precise) // While the approximation isn't good enough
             temp -= (temp * exp(temp) - args)/(exp(temp) * (temp + 1));
-        return round(temp,7);
+        return round(temp,abs(ln(t_math_precise)/ln(10)));
     };
 };
 #endif // PRODUCTLOG_HPP
