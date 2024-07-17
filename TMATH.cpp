@@ -4,7 +4,6 @@
 #include <chrono>
 #include <iomanip>
 using namespace std;
-using namespace t_math;
 using namespace std::chrono;
 void loop()
 {
@@ -12,7 +11,7 @@ void loop()
     cout << "==================" << endl;
     cin >> a;
     auto start = high_resolution_clock::now();
-    cout << "gamma(x):" << setprecision(7) << gamma(a) << endl;
+    cout << "EulerTotient(a):" << setprecision(7) << t_math::EulerTotient(a) << endl;
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
     cout << "execution time:" << duration.count() / 1e+6 << endl;
@@ -20,7 +19,7 @@ void loop()
 };
 int main()
 {
-    cout << "==============\ngamma(x) test" << endl;
+    cout << "==============\nEulerTotient(a) test" << endl;
     loop();
 
     return 0;

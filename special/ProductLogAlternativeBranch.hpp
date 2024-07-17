@@ -1,5 +1,5 @@
-#ifndef PRODUCTLOG_HPP
-#define PRODUCTLOG_HPP
+#ifndef PRODUCTLOGALTERNATIVEBRANCH_HPP
+#define PRODUCTLOGALTERNATIVEBRANCH_HPP
 #include "../t_math_constant.hpp"
 #include "../general/exp.hpp"
 #include "../general/abs.hpp"
@@ -8,13 +8,15 @@
 #include <stdexcept>
 namespace t_math 
 {
-    double ProductLog(double args) 
+    double ProductLogAlternativeBranch(double args) 
     {
         // The principal branch of the Lambert W function
-        double temp = 1; // inital guess
+        double temp = -2; // inital guess
         if(args == -1/e) return -1;
         if(args < -1/e)
-            throw std::out_of_range("The principal branch of the Lambert W function is not defined for value that is lower than -1/e.");
+            throw std::out_of_range("The Alternative branch of the Lambert W function is not defined for value that is lower than -1/e.");
+        if(args > 0)
+            throw std::out_of_range("The Alternative branch of the Lambert W function is not defined for value that is lower than -1/e.");
         if(args == 0) 
             return 0; // no need to calculating
         if(args > e-0.189)

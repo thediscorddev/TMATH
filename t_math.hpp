@@ -59,6 +59,10 @@ These functions aren't elementary, but what makes them appear here is that they 
 #include "special/li.hpp"
 #include "special/shi.hpp"
 #include "special/ProductLog.hpp"
+#include "special/ProductLogAlternativeBranch.hpp"
+#include "special/EulerTotient.hpp"
 //other function
 #include "other/is_int.hpp"
+#include "other/gcd.hpp"
+#include "other/lcm.hpp"
 #endif // T_MATH_HPP
