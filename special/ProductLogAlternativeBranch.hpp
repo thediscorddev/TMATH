@@ -16,7 +16,7 @@ namespace t_math
         if(args < -1/e)
             throw std::out_of_range("The Alternative branch of the Lambert W function is not defined for value that is lower than -1/e.");
         if(args > 0)
-            throw std::out_of_range("The Alternative branch of the Lambert W function is not defined for value that is lower than -1/e.");
+            throw std::out_of_range("The Alternative branch of the Lambert W function is not defined for value that is larger than 0.");
         if(args == 0) 
             return 0; // no need to calculating
         if(args > e-0.189)

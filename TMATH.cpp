@@ -3,6 +3,7 @@
 #include <iostream>
 #include <chrono>
 #include <iomanip>
+#include <fstream>
 using namespace std;
 using namespace std::chrono;
 void loop()
@@ -11,7 +12,7 @@ void loop()
     cout << "==================" << endl;
     cin >> a;
     auto start = high_resolution_clock::now();
-    cout << "EulerTotient(a):" << setprecision(7) << t_math::EulerTotient(a) << endl;
+    cout << "W(a):" << setprecision(7) << t_math::ProductLogAlternativeBranch(a) << endl;
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
     cout << "execution time:" << duration.count() / 1e+6 << endl;
@@ -19,8 +20,18 @@ void loop()
 };
 int main()
 {
-    cout << "==============\nEulerTotient(a) test" << endl;
-    loop();
+    ofstream file("outputs_li.txt");
+    double a = -0.01;
+    double t = 10;
+    std::cout << t_math::li(2) << endl;
+    while(t > 0)
+    {
+        if(t!=1) {
+        file << "(" << setprecision(7) << t << "," << t_math::li(t) << ")" << endl;
+        }
+        t+=a;
+    }
+    file.close();
 
     return 0;
 }
