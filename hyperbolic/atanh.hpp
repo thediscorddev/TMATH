@@ -5,7 +5,7 @@
 #include <stdexcept>
 namespace t_math 
 {
-	double atanh(double args) 
+	inline double atanh(double args) 
 	{
 		if(abs(args) > 1)
 			throw std::out_of_range("atanh only accepts value that is within -1 and 1 but not -1 and 1 itself.");

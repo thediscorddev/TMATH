@@ -9,10 +9,10 @@
 #include "../hyperbolic/cosh.hpp"
 namespace t_math
 {
-    double chi(double args)
+    inline double chi(double args)
     {
         if (args < 0)
-            return -1 * si(-1 * args);
+            return -1 * chi(-1 * args);
         double temp = 0;
         if (args == 0)
             return 0;

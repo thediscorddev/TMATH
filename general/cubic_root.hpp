@@ -4,7 +4,7 @@
 #include <stdexcept>
 namespace t_math
 {
-    long double cubic_root(double x)
+    inline long double cubic_root(double x)
     {
         if (x < 0)
             return -1 * cubic_root(-1 * x);

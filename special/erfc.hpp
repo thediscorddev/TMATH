@@ -3,7 +3,7 @@
 #include "erf.hpp"
 namespace t_math
 {
-    double erfc(double arg)
+    inline double erfc(double arg)
     {
         return 1 - erf(arg);
     };

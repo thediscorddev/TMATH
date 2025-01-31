@@ -10,7 +10,7 @@
 #include <stdexcept>
 namespace t_math
 {
-    double ci(double args)
+    inline double ci(double args)
     {
         double temp = 0;
         int i = 1;

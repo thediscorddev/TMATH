@@ -7,7 +7,7 @@
 #include "../t_math_constant.hpp"
 namespace t_math
 {
-    long double asin(double args)
+    inline long double asin(double args)
     {
         if (abs(args) > 1)
             throw std::out_of_range("Asin only accept values between -1 and 1.");

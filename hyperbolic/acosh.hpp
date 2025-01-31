@@ -5,7 +5,7 @@
 #include <stdexcept>
 namespace t_math 
 {
-	double acosh(double args) 
+	inline double acosh(double args) 
 	{
 		if(args < 1)
 			throw std::out_of_range("acosh only accepts value that is bigger or equal to 1.");

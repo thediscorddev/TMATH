@@ -3,7 +3,7 @@
 #include "../other/gcd.hpp"
 namespace t_math
 {
-    int EulerTotient(int number)
+    inline int EulerTotient(int number)
     {
         int temp = 0;
         for(int i = 1; i <= number; i++)

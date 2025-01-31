@@ -5,7 +5,7 @@
 #include <stdexcept>
 namespace t_math 
 {
-	double acoth(double args) 
+	inline double acoth(double args) 
 	{
 		if(abs(args) < 1)
 			throw std::out_of_range("acoth only accepts value that is not inside the range of -1 and 1.");

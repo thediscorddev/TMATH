@@ -6,7 +6,7 @@
 #include <stdexcept>
 namespace t_math 
 {
-	double acsch(double args) 
+	inline double acsch(double args) 
 	{
 		if(args == 0)
 			throw std::out_of_range("acsch only accepts value that is not 0.");

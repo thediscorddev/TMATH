@@ -3,7 +3,7 @@
 #include "tanh.hpp"
 namespace t_math 
 {
-		double coth(double args) 
+		inline double coth(double args) 
 		{
 				return 1/tanh(args);
 		};

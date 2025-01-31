@@ -2,7 +2,7 @@
 #define GCD_HPP
 namespace t_math
 {
-    int gcd(int first, int second)
+    inline int gcd(int first, int second)
     {
         int temp_a = first;
         int temp_b = second;

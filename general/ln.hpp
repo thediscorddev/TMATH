@@ -3,10 +3,11 @@
 #include "abs.hpp"
 #include "pow.hpp"
 #include "../t_math_constant.hpp"
+#include "floor.hpp"
 #include <stdexcept>
 namespace t_math
 {
-    long double ln(double x)
+    inline long double ln(double x)
     {
         long double result = 0;           // first guess
         long double num_of_int_digit = 0; // first guess

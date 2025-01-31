@@ -4,7 +4,7 @@
 #include "ceil.hpp"
 namespace t_math
 {
-    long double round_high(double x, int precision)
+    inline long double round_high(double x, int precision)
     {
         double n = ceil(x * pow_int(10, precision));
         return n / pow_int(10, precision);

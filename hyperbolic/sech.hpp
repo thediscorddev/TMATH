@@ -3,7 +3,7 @@
 #include "cosh.hpp"
 namespace t_math 
 {
-		double sech(double args) 
+		inline double sech(double args) 
 		{
 				return 1/cosh(args);
 		};

@@ -3,7 +3,7 @@
 #include <stdexcept>
 namespace t_math
 {
-    long double d_fac(int args)
+    inline long double d_fac(int args)
     {
         if (args < 0)
             throw std::out_of_range("Factorial only accepts positive integer.");
@@ -11,7 +11,7 @@ namespace t_math
             return 1;
         return args * d_fac(args - 1);
     };
-    long long int fac(int args)
+    inline long long int fac(int args)
     {
         if (args < 0)
             throw std::out_of_range("Factorial only accepts positive integer.");

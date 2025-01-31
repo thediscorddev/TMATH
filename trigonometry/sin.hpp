@@ -7,7 +7,7 @@
 #include "../general/abs.hpp"
 namespace t_math
 {
-    double sin(double args)
+    inline double sin(double args)
     {
         if (args > 2 * pi)
             return sin(args - 2 * pi);
@@ -17,9 +17,9 @@ namespace t_math
             return 1;
         double temp = 0;
         int i = 0;
-        while (abs(pow(-1, i) * pow(args, 2 * i + 1) / d_fac(2 * i + 1)) > t_math_precise)
+        while (abs(pow_int(-1, i) * pow_int(args, 2 * i + 1) / d_fac(2 * i + 1)) > t_math_precise)
         {
-            temp += pow(-1, i) * pow(args, 2 * i + 1) / d_fac(2 * i + 1);
+            temp += pow_int(-1, i) * pow_int(args, 2 * i + 1) / d_fac(2 * i + 1);
             i++;
         };
         return round_high(temp, 7);

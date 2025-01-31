@@ -27,7 +27,7 @@ int main()
     while(t > 0)
     {
         if(t!=1) {
-        file << "(" << setprecision(7) << t << "," << t_math::li(t) << ")" << endl;
+        file << "(" << setprecision(7) << t << "," << t_math::gamma(t) << ")" << endl;
         }
         t+=a;
     }

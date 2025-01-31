@@ -13,7 +13,7 @@
 #include <iostream>
 namespace t_math
 {
-    double gamma(double args)
+    inline double gamma(double args)
     {
         if (args <= 0 && is_int(args))
             throw std::out_of_range("Gamma function is not defined at x = 0 and negative integer.");

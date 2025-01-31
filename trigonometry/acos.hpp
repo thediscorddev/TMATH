@@ -6,7 +6,7 @@
 #include <stdexcept>
 namespace t_math
 {
-    long double acos(double args)
+    inline long double acos(double args)
     {
         if (abs(args) > 1)
             throw std::out_of_range("Acos only accept values between -1 and 1.");

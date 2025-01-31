@@ -5,7 +5,7 @@
 #include "floor.hpp"
 namespace t_math
 {
-   long double round(double x, int precision)
+   inline long double round(double x, int precision)
    {
       if (floor(x * pow_int(10, precision + 1)) - floor(x * pow_int(10, precision)) * 10 >= 5)
       {

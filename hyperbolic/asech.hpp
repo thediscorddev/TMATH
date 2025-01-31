@@ -6,7 +6,7 @@
 #include <stdexcept>
 namespace t_math 
 {
-	double asech(double args) 
+	inline double asech(double args) 
 	{
 		if(args <= 0 || args > 1)
 			throw std::out_of_range("asech only accepts value that is inside the range of 0 and 1 but not 0 itself.");

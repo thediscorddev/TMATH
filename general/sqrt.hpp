@@ -4,7 +4,7 @@
 #include <stdexcept>
 namespace t_math
 {
-    long double sqrt(double x)
+    inline long double sqrt(double x)
     {
         if (x < 0)
             throw std::out_of_range("Sqrt of a negative number.");

@@ -3,7 +3,7 @@
 namespace t_math
 {
     template <typename T>
-    bool is_int(T arg)
+    inline bool is_int(T arg)
     {
         if (static_cast<int>(arg) - arg == 0)
             return true;

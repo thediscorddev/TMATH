@@ -3,7 +3,7 @@
 namespace t_math
 {
     template <typename T>
-    T abs(T args)
+    inline T abs(T args)
     {
         if (args < 0)
             return -1 * args;

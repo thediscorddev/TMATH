@@ -9,7 +9,7 @@
 #include "../trigonometry/cos.hpp"
 namespace t_math
 {
-    double si(double args)
+    inline double si(double args)
     {
         if (args < 0)
             return -1 * si(-1 * args);

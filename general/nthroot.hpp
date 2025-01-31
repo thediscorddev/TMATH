@@ -4,7 +4,7 @@
 #include "ln.hpp"
 namespace t_math
 {
-    long double root(double x, double y)
+    inline long double root(double x, double y)
     {
         return exp(1 / y * ln(x));
     };

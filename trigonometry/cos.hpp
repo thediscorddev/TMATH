@@ -4,7 +4,7 @@
 #include "../t_math_constant.hpp"
 namespace t_math
 {
-    double cos(double args)
+    inline double cos(double args)
     {
         return sin(pi / 2 - args);
     }

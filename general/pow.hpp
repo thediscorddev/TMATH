@@ -3,7 +3,7 @@
 #include <stdexcept>
 namespace t_math
 {
-    long double pow_int(double base, int exponent)
+    inline long double pow_int(double base, int exponent)
     {
         if (exponent == 0)
             return 1;

@@ -15,7 +15,7 @@
 
 namespace t_math 
 {
-  double li(double arg) 
+  inline double li(double arg) 
   {
     if(arg == 0)
         return 0;

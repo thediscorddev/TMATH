@@ -3,7 +3,7 @@
 #include "sinh.hpp"
 namespace t_math 
 {
-		double csch(double args) 
+		inline double csch(double args) 
 		{
 				return 1/sinh(args);
 		};

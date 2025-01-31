@@ -6,7 +6,7 @@
 #include "../general/abs.hpp"
 namespace t_math
 {
-	double sinh(double args) 
+	inline double sinh(double args) 
 	{
 		double temp = 0;
 		int i = 0;
@@ -14,9 +14,9 @@ namespace t_math
 			return -1 * sinh(-1 * args);
 		if (args == 0) 
 			return 0;
-		while (abs(pow(args,2*i+1) / d_fac(2*i+1)) > t_math_precise) 
+		while (abs(pow_int(args,2*i+1) / d_fac(2*i+1)) > t_math_precise) 
 		{
-			temp+=pow(args,2*i+1) / d_fac(2*i+1);
+			temp+=pow_int(args,2*i+1) / d_fac(2*i+1);
 			i++;
 		};
 		return temp;

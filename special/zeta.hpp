@@ -1,13 +1,13 @@
 #ifndef ZETA_HPP
 #define ZETA_HPP
 #include "../t_math_constant.hpp"
-#include "../general/pow.hpp"
+#include "../general/d_pow.hpp"
 #include "../general/abs.hpp"
 #include "../other/is_int.hpp"
 #include <stdexcept>
 namespace t_math
 {
-    double zeta(double arg, double alpha = 1)
+    inline double zeta(double arg, double alpha = 1)
     {
         if (is_int(arg) && arg <= 0)
             throw std::out_of_range("Hurwitz zeta function isn't defined at that range!");

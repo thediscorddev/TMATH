@@ -3,7 +3,7 @@
 #include "../general/exp.hpp"
 namespace t_math
 {
-	double cosh(double args) 
+	inline double cosh(double args) 
 	{
 		return (exp(args)+exp(-1*args))/2;
 	};

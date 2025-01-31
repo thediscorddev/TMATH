@@ -3,7 +3,7 @@
 #include "sin.hpp"
 namespace t_math
 {
-    double csc(double args)
+    inline double csc(double args)
     {
         return 1 / sin(args);
     };

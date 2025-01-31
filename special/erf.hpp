@@ -7,7 +7,7 @@
 #include "../t_math_constant.hpp"
 namespace t_math
 {
-    double erf(double arg)
+    inline double erf(double arg)
     {
         double temp = 0;
         int i = 0;

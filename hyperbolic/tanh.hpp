@@ -4,7 +4,7 @@
 #include "cosh.hpp"
 namespace t_math 
 {
-	double tanh(double args) 
+	inline double tanh(double args) 
 	{
 			return sinh(args)/cosh(args);
 	};

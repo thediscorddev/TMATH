@@ -2,7 +2,7 @@
 #define CEIL_HPP
 namespace t_math
 {
-    long ceil(double x)
+    inline long ceil(double x)
     {
         int int_part = static_cast<int>(x); // Get the integer part of x
         if (x > int_part)

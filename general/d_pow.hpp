@@ -6,7 +6,7 @@
 #include "pow.hpp"
 namespace t_math
 {
-    long double pow(double base, double exponent)
+    inline long double pow(double base, double exponent)
     {
         if(exponent == static_cast<int>(exponent)) return pow_int(base,exponent);
          if (base < 0)

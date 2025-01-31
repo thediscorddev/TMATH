@@ -6,7 +6,7 @@
 #include "../t_math_constant.hpp"
 namespace t_math
 {
-    long double exp(double x)
+    inline long double exp(double x)
     {
         long double temp = 0;
         if (x < 0)

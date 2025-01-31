@@ -4,7 +4,7 @@
 #include "../general/sqrt.hpp"
 namespace t_math 
 {
-	double asinh(double args) 
+	inline double asinh(double args) 
 	{
 		return ln(args + sqrt(args*args+1));
 	};

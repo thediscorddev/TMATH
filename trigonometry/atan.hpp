@@ -5,7 +5,7 @@
 #include "../t_math_constant.hpp"
 namespace t_math
 {
-  long double atan(double args)
+  inline long double atan(double args)
   {
     if (args < -1)
       return atan(1 / (-1 * args)) - pi / 2;

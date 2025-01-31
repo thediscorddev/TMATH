@@ -4,7 +4,7 @@
 #include "../general/abs.hpp"
 namespace t_math
 {
-    int lcm(int first, int second)
+    inline int lcm(int first, int second)
     {
         return abs(first * second)/gcd(first,second);
     }

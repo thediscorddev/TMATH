@@ -8,7 +8,7 @@
 #include <stdexcept>
 namespace t_math 
 {
-    double ProductLog(double args) 
+    inline double ProductLog(double args) 
     {
         // The principal branch of the Lambert W function
         double temp = 1; // inital guess

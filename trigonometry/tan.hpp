@@ -4,7 +4,7 @@
 #include "cos.hpp"
 namespace t_math
 {
-    double tan(double args)
+    inline double tan(double args)
     {
         return sin(args) / cos(args);
     };
